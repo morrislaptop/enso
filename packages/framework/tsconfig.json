@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig",
+  "baseUrl": ".",
+  "paths": {
+    "@enso": [
+      "./src/**/*"
+    ]
+  },
+  "include": [
+    "./migrations/**/*",
+    "./src/**/*",
+    "./test/**/*"
+  ]
+}

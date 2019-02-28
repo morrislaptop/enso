@@ -1,0 +1,50 @@
+{
+  "name": "@enso/framework",
+  "version": "0.1.0",
+  "description": "Base packages for the Enso framework",
+  "scripts": {
+    "test": "DEBUG=* ts-node -r tsconfig-paths/register test/ApiServer.ts"
+  },
+  "keywords": [
+    "framework",
+    "typescript"
+  ],
+  "author": "1a35e1@protonmail.com",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^2.2.2",
+    "@types/debug": "^0.0.31",
+    "@types/koa": "^2.0.46",
+    "@types/koa-bodyparser": "^5.0.1",
+    "@types/koa-helmet": "^3.1.2",
+    "@types/koa-morgan": "^1.0.4",
+    "@types/koa-router": "^7.0.32",
+    "@types/koa__cors": "^2.2.3",
+    "class-validator": "^0.9.1",
+    "debug": "^4.1.0",
+    "dotenv-safe": "^6.0.0",
+    "http": "^0.0.0",
+    "inversify": "^5.0.1",
+    "inversify-koa-utils": "https://github.com/enso-ts/inversify-koa-utils.git",
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
+    "koa-helmet": "^4.0.0",
+    "koa-jwt": "^3.5.1",
+    "koa-morgan": "^1.0.1",
+    "koa-router": "^7.4.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.4.3",
+    "reflect-metadata": "^0.1.12",
+    "ts-node": "^7.0.1",
+    "tslib": "^1.9.3",
+    "typeorm": "^0.2.9"
+  },
+  "devDependencies": {
+    "tsconfig-paths": "^3.6.0"
+  },
+  "peerDependencies": {
+    "inversify": "^5.0.1",
+    "typescript": "^3.1.4"
+  }
+}
