@@ -1,5 +1,5 @@
 import { injectable } from 'inversify'
-import { interfaces, controller, httpGet } from 'inversify-koa-utils'
+import { interfaces, controller, httpGet } from 'inversify-koa'
 import * as Router from 'koa-router'
 
 const pkg = require('../package.json')

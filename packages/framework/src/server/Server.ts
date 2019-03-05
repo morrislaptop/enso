@@ -1,6 +1,6 @@
 import Koa from 'koa'
 import { Container } from 'inversify'
-import { InversifyKoaServer } from 'inversify-koa-utils'
+import { InversifyKoaServer } from 'inversify-koa'
 import { Connection, ConnectionOptions, createConnection } from 'typeorm'
 import { Server } from 'http'
 import Debug from 'debug'
