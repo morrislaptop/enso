@@ -6,9 +6,10 @@
   ],
   "scripts": {
     "postinstall": "lerna bootstrap",
-    "test": "lerna run test"
+    "clean": "bash scripts/clean.sh"
   },
   "devDependencies": {
-    "lerna": "^3.4.0"
+    "lerna": "^3.4.0",
+    "typescript": "^3.2.2"
   }
 }

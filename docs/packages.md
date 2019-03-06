@@ -8,7 +8,7 @@ Enso relies heavily on the following packages.
 |-----------------------------|:-------------------------------------------|
 | [koa](todo)                 | async, await + catch > callbacks           |
 | [inversify](todo)           | Well tested IoC container                  |
-| [inversify-koa-utils](todo) | koa + inversify bridge though decorators   |
+| [inversify-koa](todo) | koa + inversify bridge though decorators   |
 | [jest](todo)                | Zero-config, coverage, advanced assertions |
 | [typeorm](todo)             | MySQL, PostgreSQL, MariaDB, mongodb + more |
 
