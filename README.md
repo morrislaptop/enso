@@ -12,6 +12,8 @@ and modern Software Architecture and Programming principles.
 
 ## Contribution
 
+Reach out and help shape the development with us on [![Gitter](https://badges.gitter.im/enso-ts/community.svg)](https://gitter.im/enso-ts/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 ### Identity
 
 Enso is experimenting with using the concept of using a `Verifable dispsable handle`.
