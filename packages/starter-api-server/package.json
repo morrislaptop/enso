@@ -1,5 +1,5 @@
 {
-  "name": "starter-api-server",
+  "name": "@enso/starter-api-server",
   "version": "1.0.0",
   "description": "An API server with the ENSO framework",
   "main": "src/server.ts",
