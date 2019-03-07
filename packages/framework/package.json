@@ -1,6 +1,6 @@
 {
   "name": "@enso/framework",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Base packages for the Enso framework",
   "scripts": {
     "test": "DEBUG=* ts-node -r tsconfig-paths/register test/ApiServer.ts"
@@ -36,7 +36,7 @@
     "morgan": "^1.9.1",
     "pg": "^7.4.3",
     "reflect-metadata": "^0.1.12",
-    "ts-node": "^7.0.1",
+    "ts-node": "^8.0.2",
     "tslib": "^1.9.3",
     "typeorm": "^0.2.9"
   },

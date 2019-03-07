@@ -1,0 +1,8 @@
+{
+  "extends": "../../tsconfig",
+  "baseUrl": ".",
+  "include": [
+    "./src/**/*",
+    "./test/**/*"
+  ]
+}

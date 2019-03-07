@@ -43,7 +43,7 @@ export abstract class ServerAbstract {
     return koa.build()
   }
 
-  private async initiateDatabaseConnection (connectionOptions: ConnectionOptions): Promise<Connection> {
+  async initiateDatabaseConnection (connectionOptions: ConnectionOptions): Promise<Connection> {
     this.connection = await createConnection({
       ...connectionOptions
       // logging: false
@@ -51,15 +51,9 @@ export abstract class ServerAbstract {
     return this.connection
   }
 
-  async build (container: Container, connectionOptions?: ConnectionOptions): Promise<void> {
+  async build (container: Container): Promise<void> {
     // koa
     this.koa = await this.initialiseKoa(container)
-
-    // create the default connection
-    if (connectionOptions) {
-      this.connectionOptions = connectionOptions
-      this.connection = await this.initiateDatabaseConnection(connectionOptions)
-    }
 
     this.isReady = true
   }
