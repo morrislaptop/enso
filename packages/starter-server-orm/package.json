@@ -1,11 +1,15 @@
 {
-  "name": "@enso/starter-api-server",
+  "name": "@enso/starter-api-typeorm",
   "version": "0.2.0",
-  "description": "An API server with the ENSO framework",
+  "description": "An API, using TypeORM using the Enso framework",
   "main": "src/server.ts",
   "scripts": {
     "start": "DEBUG=* ts-node -r tsconfig-paths/register src/server.ts",
-    "test": "jest"
+    "test": "jest",
+    "migration:create": "ts-node --transpileOnly -r tsconfig-paths/register ../../node_modules/typeorm/cli.js migration:create",
+    "migration:revert": "ts-node --transpileOnly -r tsconfig-paths/register ../../node_modules/typeorm/cli.js migration:revert",
+    "migration:run": "ts-node --transpileOnly -r tsconfig-paths/register ../../node_modules/typeorm/cli.js migration:run",
+    "schema:drop": "ts-node --transpileOnly -r tsconfig-paths/register ../../node_modules/typeorm/cli.js schema:drop"
   },
   "license": "MIT",
   "dependencies": {
@@ -15,7 +19,7 @@
     "koa-router": "^7.4.0",
     "reflect-metadata": "^0.1.12",
     "supertest": "^3.3.0",
-    "typeorm": "^0.2.9"
+    "typeorm": "^0.2.14"
   },
   "devDependencies": {
     "@types/dotenv-safe": "^5.0.3",

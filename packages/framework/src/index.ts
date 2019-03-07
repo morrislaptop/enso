@@ -1,6 +1,5 @@
 import 'reflect-metadata'
 
-
 import { ServerAbstract } from './server/Server'
 
 // Interfaces
@@ -15,6 +14,10 @@ export * from './bindings'
 
 // tests
 export * from './tests'
+
+// TODO: export vendor utility files under a nicer namespace
+// ie. @enso/typeorm
+export * from './vendors/typeorm/SnakeCaseNamingStrategy'
 
 export {
   ServerAbstract
