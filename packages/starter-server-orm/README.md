@@ -14,6 +14,8 @@ A sample koa server demonstrating the following features :
 * Example of how to initialise mutiple tables easily
 * Example of how to enable postgres features such as `uuid-ossp`
 * Example of creating a table with sensible defaults `now()`, `uuid_generate_v4()` and `isUnique`.
+* Example of typing HTTP requests
+* Validating HTTP requests though `class-transformer-validator`
 
 Utility functions defined in `package.json` to leverage Typescript directly
 
@@ -24,5 +26,6 @@ Utility functions defined in `package.json` to leverage Typescript directly
 
 ## TODO
 
-[ ] Add `postgres`
+[ ] Improve how DB is initialised and bound to a container
+[ ] Get tests working
 [ ] Move this to its own `starters` repo so its not conflated with the framework
