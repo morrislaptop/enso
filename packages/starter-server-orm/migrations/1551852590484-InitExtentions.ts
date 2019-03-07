@@ -1,7 +1,6 @@
 import { MigrationInterface, QueryRunner } from 'typeorm'
-import Debug from 'debug'
-
-const debug = Debug('app:migrations')
+// import Debug from 'debug'
+// const debug = Debug('app:migrations')
 
 const EXTENSIONS = [
   'uuid-ossp'     // Allows the database to generate a uuid.v4 natively

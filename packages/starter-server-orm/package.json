@@ -6,10 +6,10 @@
   "scripts": {
     "start": "DEBUG=* ts-node -r tsconfig-paths/register src/server.ts",
     "test": "jest",
-    "migration:create": "ts-node --transpileOnly -r tsconfig-paths/register ../../node_modules/typeorm/cli.js migration:create",
-    "migration:revert": "ts-node --transpileOnly -r tsconfig-paths/register ../../node_modules/typeorm/cli.js migration:revert",
-    "migration:run": "ts-node --transpileOnly -r tsconfig-paths/register ../../node_modules/typeorm/cli.js migration:run",
-    "schema:drop": "ts-node --transpileOnly -r tsconfig-paths/register ../../node_modules/typeorm/cli.js schema:drop"
+    "migration:create": "ts-node -r tsconfig-paths/register ../../node_modules/typeorm/cli.js migration:create",
+    "migration:revert": "ts-node -r tsconfig-paths/register ../../node_modules/typeorm/cli.js migration:revert",
+    "migration:run": "ts-node -r tsconfig-paths/register ../../node_modules/typeorm/cli.js migration:run",
+    "schema:drop": "ts-node -r tsconfig-paths/register ../../node_modules/typeorm/cli.js schema:drop"
   },
   "license": "MIT",
   "dependencies": {
@@ -21,6 +21,7 @@
     "koa-router": "^7.4.0",
     "reflect-metadata": "^0.1.12",
     "supertest": "^3.3.0",
+    "ts-node": "^8.0.2",
     "typeorm": "^0.2.14"
   },
   "devDependencies": {

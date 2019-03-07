@@ -4,6 +4,7 @@ import { App } from './App'
 import { env } from './config/env'
 // TODO: move to /config/container?
 import { container } from './container'
+import { createConnection, Connection } from 'typeorm'
 
 (async () => {
   try {
@@ -11,7 +12,18 @@ import { container } from './container'
     console.log('> Starting server...')
     console.log('============================================')
 
+    // Read in config
+    console.log('> Starting database')
+    const connectionOptions = await require('./../ormconfig')
+    const connection = await createConnection(connectionOptions)
+
+    // Bind Application-instance-specific values
+    // container.bind<IEnvironmentConfig>($b.Environment).toConstantValue(env)
+    container.bind<Connection>(Connection).toConstantValue(connection)
+
+
     const app = new App(env)
+    await app.initiateDatabaseConnection(connectionOptions)
     await app.build(container)
     await app.start()
 

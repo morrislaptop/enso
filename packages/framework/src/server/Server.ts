@@ -7,7 +7,6 @@ import Debug from 'debug'
 
 import { IEnvironmentConfig } from '../config/interfaces'
 import { PostgresConnectionCredentialsOptions } from 'typeorm/driver/postgres/PostgresConnectionCredentialsOptions';
-import { $b } from '../bindings';
 
 const debug = Debug('enso:Server')
 
@@ -44,7 +43,7 @@ export abstract class ServerAbstract {
     return koa.build()
   }
 
-  private async initiateDatabaseConnection (connectionOptions: ConnectionOptions): Promise<Connection> {
+  async initiateDatabaseConnection (connectionOptions: ConnectionOptions): Promise<Connection> {
     this.connection = await createConnection({
       ...connectionOptions
       // logging: false
@@ -52,27 +51,11 @@ export abstract class ServerAbstract {
     return this.connection
   }
 
-  async build (container: Container, connectionOptions?: ConnectionOptions): Promise<void> {
-    // create the default connection
-    if (connectionOptions) {
-      this.connectionOptions = connectionOptions
-      this.connection = await this.initiateDatabaseConnection(connectionOptions)
-    }
-
-    container = await this.bindConstants(container)
-
+  async build (container: Container): Promise<void> {
     // koa
     this.koa = await this.initialiseKoa(container)
 
     this.isReady = true
-  }
-
-  async bindConstants (container: Container) {
-    if (this.connection) {
-      container.bind<Connection>($b.Connection).toConstantValue(this.connection)
-    }
-    container.bind<IEnvironmentConfig>($b.Environment).toConstantValue(this.env)
-    return container
   }
 
   /**
