@@ -13,6 +13,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "class-transformer": "^0.2.0",
+    "class-transformer-validator": "^0.6.0",
     "dotenv-safe": "^6.1.0",
     "inversify": "^5.0.1",
     "inversify-koa": "^1.0.3",

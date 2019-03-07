@@ -2,7 +2,7 @@ import { TestHarness } from '@enso/framework'
 
 import { App } from '../../src/App'
 import { env } from '../../src/config/env'
-import { container } from '../../src/config/registry'
+import { container } from '../../src/container'
 
 
 export async function buildTestHarness (): Promise<TestHarness> {

@@ -2,7 +2,8 @@ import 'reflect-metadata'
 
 import { App } from './App'
 import { env } from './config/env'
-import { container } from './config/registry'
+// TODO: move to /config/container?
+import { container } from './container'
 
 (async () => {
   try {
