@@ -10,11 +10,12 @@ A sample koa server demonstrating the following features :
 
 ## Additional features
 
+* Example of adding `bodyparser`, `cors` and `morgan` to koa middleware
 * Persistence using `postgresql` with `TypeORM`
 * Example of how to initialise mutiple tables easily
 * Example of how to enable postgres features such as `uuid-ossp`
 * Example of creating a table with sensible defaults `now()`, `uuid_generate_v4()` and `isUnique`.
-* Example of typing HTTP requests
+* Example of typing inbound HTTP requests
 * Validating HTTP requests though `class-transformer-validator`
 
 Utility functions defined in `package.json` to leverage Typescript directly
