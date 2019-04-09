@@ -10,3 +10,4 @@
 * [ ] http://typeorm.io/#/
 * [ ] Email Service
 * [ ] Asset Service
+* [ ] WebSockets - https://github.com/typestack/socket-controllers

@@ -32,3 +32,10 @@ Additional reading:
 * https://github.com/AnalogJ/gitmask
 * https://github.com/zombie/blind-reviews/
 * https://github.com/guyingbo/shadowproxy
+* https://medium.com/gitcoin/funding-open-source-in-the-blockchain-era-8ded753bf05f
+
+### DDD
+
+https://www.youtube.com/watch?v=kIKwPNKXaLU
+
+* https://en.wikipedia.org/wiki/Domain-driven_design
