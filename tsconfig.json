@@ -28,6 +28,7 @@
       "node_modules/@types/koa-bodyparser"
     ],
     "types": [
+      "node",
       "reflect-metadata",
       "jest"
     ],

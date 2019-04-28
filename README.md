@@ -3,14 +3,16 @@
 Enso is typescript framework built with a thin compatibility layer
 that provides developers a rich framework for building server side applications.
 
-Enso seeks to create a balanced community that is informed by classical
-and modern Software Architecture and Programming principles.
+Enso seeks to create a balanced community that is informed by both classical
+and modern Software Architecture and programming principles.
 
 ## Getting Started
 
 - Coming soon
 
-## Contribution
+## Community
+
+Our aim is to have the majority of resources that may be developed - owned, operated and vetted by the community.
 
 Reach out and help shape the development with us on [![Gitter](https://badges.gitter.im/enso-ts/community.svg)](https://gitter.im/enso-ts/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 

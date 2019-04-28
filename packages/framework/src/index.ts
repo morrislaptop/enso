@@ -1,10 +1,12 @@
 import 'reflect-metadata'
 
-import { ServerAbstract } from './server/Server'
+import { ServerAbstract } from './server/ServerAbstract'
 
 // Interfaces
 export * from './config/interfaces'
 export * from './server/interfaces'
+
+export * from './config/constants'
 
 // recommended koa middleware
 export * from './server/middleware'

@@ -7,7 +7,11 @@
   },
   "keywords": [
     "framework",
-    "typescript"
+    "typescript",
+    "javascript",
+    "typescript",
+    "nodejs",
+    "nodejs-framework"
   ],
   "author": "1a35e1@protonmail.com",
   "main": "src/index.ts",

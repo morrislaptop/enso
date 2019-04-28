@@ -2,7 +2,7 @@ import { default as supertest, SuperTest, Test } from 'supertest'
 import { Connection, createConnection, getConnectionOptions, ConnectionOptions } from 'typeorm'
 import Debug from 'debug'
 
-import { ServerAbstract } from '../server/Server'
+import { ServerAbstract } from '../server/ServerAbstract'
 
 const debug = Debug('enso:TestHarness')
 

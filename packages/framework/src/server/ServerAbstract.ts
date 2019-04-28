@@ -1,4 +1,5 @@
 import Koa from 'koa'
+import http from 'http'
 import { Container } from 'inversify'
 import { InversifyKoaServer } from 'inversify-koa'
 import { Connection, ConnectionOptions, createConnection } from 'typeorm'
@@ -12,6 +13,9 @@ const debug = Debug('enso:Server')
 
 export abstract class ServerAbstract {
 
+  /**
+   * Instance of Koa
+   */
   koa: Koa
 
   connection: Connection
@@ -31,13 +35,32 @@ export abstract class ServerAbstract {
     public env: IEnvironmentConfig
   ) {}
 
+  /**
+   * Force the User to define how middleware is implemented
+   *
+   * @param koa
+   * @param container
+   */
   abstract applyMiddleware (koa: Koa, container: Container): void
 
   private async initialiseKoa (container: Container): Promise<Koa> {
-    const controllers = container.getAll(Symbol.for('Controller'))
     const koa = new InversifyKoaServer(container)
 
-    debug('registerdControllers()', controllers)
+    debug('listRegisteredControllers()')
+    try {
+      const controllers = container.getAll(Symbol.for('Controller'))
+      debug(` => \n`, controllers.map(c => Object.keys(c)))
+    } catch (err) {
+      debug(' => No controllers found', err)
+    }
+
+    debug('listRegisteredWebSockets()')
+    try {
+      const websockets = container.getAll(Symbol.for('WebSocketController'))
+      debug(` => \n`, websockets)
+    } catch {
+      debug(' => No WebSocketController found')
+    }
 
     koa.setConfig(koa => this.applyMiddleware(koa, container))
     return koa.build()
@@ -54,7 +77,6 @@ export abstract class ServerAbstract {
   async build (container: Container): Promise<void> {
     // koa
     this.koa = await this.initialiseKoa(container)
-
     this.isReady = true
   }
 
@@ -65,7 +87,7 @@ export abstract class ServerAbstract {
     return this.container
   }
 
-  async start () {
+  async start (): Promise<http.Server> {
     this.server = await this.koa.listen(this.env.PORT)
     return this.server
   }
