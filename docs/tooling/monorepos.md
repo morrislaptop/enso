@@ -7,8 +7,7 @@ thanks to tools like Lerna and the development of Yarn workspaces
 
 Have a look at how some of these popular projects are adopting this metholodgy.
 
-* Gatsvy
-* Foo
+* Gatsby
 
 Note: These are not endorsments just examples of how this approach may be used.
 

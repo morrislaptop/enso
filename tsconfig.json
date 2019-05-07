@@ -28,14 +28,14 @@
       "node_modules/@types/koa-bodyparser"
     ],
     "types": [
+      "node",
       "reflect-metadata",
       "jest"
     ],
     "lib": [
       "dom",
-      "es7",
-      "es2017.object",
-      "es2016"
+      "es2016",
+      "es2017"
     ],
     "baseUrl": "./",
     "paths": {
