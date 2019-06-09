@@ -1,5 +1,7 @@
 # CLI
 
+TODO: Move this to its own repo
+
 Sketch out cli interface
 
 Helper to register Inversify bindings

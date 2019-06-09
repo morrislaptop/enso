@@ -20,4 +20,6 @@ Types of changes:
 
 ### Added
 
-* Added `koa-multer` to list of recommended middleware
+* `koa-multer` to list of recommended middleware
+* Allow `@enso-ts/framework` to compile correctly
+* `yarn build` to compile the project from workspace root

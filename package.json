@@ -7,7 +7,8 @@
   ],
   "scripts": {
     "postinstall": "lerna bootstrap",
-    "clean": "bash scripts/clean.sh"
+    "clean": "bash scripts/clean.sh",
+    "build": "lerna run build"
   },
   "devDependencies": {
     "lerna": "^3.4.0",
