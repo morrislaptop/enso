@@ -66,5 +66,3 @@ Source: <https://github.com/librariesio/sustainable-oss-attributes>
 [ ] Having a recognizable brand can help the project build a strong audience of users and contributors, that includes having a logo and website of it’s own to help users understand what the project is about and also control the brand of the project outside of the GitHub repository page.
 [ ] Projects should aim to keep their users and contributors up to date with what’s going on with the project, including larger announcements and highlighting interesting goings on in the development process as well as sharing useful related content via an email newsletter, blogging and twitter.
 [ ] Surveys can also be a useful tool to collect quantitative and qualitative information about how and why the use the project and what else they would find useful to help inform future roadmapping decisions
-
-
