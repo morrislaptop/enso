@@ -1,7 +1,8 @@
 import {Command, flags} from '@oclif/command'
 import { execSync, spawnSync } from 'child_process'
 import * as fs from 'fs-extra'
-import pkg from '../package.json'
+
+const pkg = require('../package.json')
 
 class EnsoJSCreateApp extends Command {
 

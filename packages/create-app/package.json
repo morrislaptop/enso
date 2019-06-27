@@ -1,12 +1,12 @@
 {
   "name": "@ensojs/create-app",
   "description": "Utility for starting enso projects",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "private": false,
   "author": "1a35e1 @1a35e1",
   "bin": {
     "create-enso-app": "./bin/run"
   },
-  "bugs": "https://github.com/1a35e1/create-app/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -29,7 +29,7 @@
     "/bin",
     "/lib"
   ],
-  "homepage": "https://github.com/1a35e1/create-app",
+  "homepage": "https://github.com/enso-ts/enso",
   "keywords": [
     "oclif"
   ],
@@ -38,7 +38,7 @@
   "oclif": {
     "bin": "create-enso-app"
   },
-  "repository": "1a35e1/create-app",
+  "repository": "enso-ts/enso",
   "scripts": {
     "posttest": "tslint -p . -t stylish",
     "prepack": "rm -rf lib && tsc -b",
