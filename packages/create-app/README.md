@@ -11,5 +11,11 @@ Utility for setting up Enso projects
 ## Usage
 
 ```bash
-yarn create @ensojs/app
+# npx (working)
+npx @ensojs/create-app [APP]
+
+# yarn (currently buggy)
+yarn create @ensojs/app [APP]
 ```
+
+Then `cd [APP]` and `yarn dev`
