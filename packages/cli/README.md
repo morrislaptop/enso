@@ -1,5 +1,4 @@
-@ensojs/cli
-===========
+# @ensojs/cli
 
 CLI for the Enso framework
 
@@ -12,7 +11,9 @@ CLI for the Enso framework
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
-# Usage
+
+## Usage
+
 <!-- usage -->
 ```sh-session
 $ npm install -g @ensojs/cli
@@ -26,7 +27,8 @@ USAGE
 ...
 ```
 <!-- usagestop -->
-# Commands
+## Commands
+
 <!-- commands -->
 * [`enso hello [FILE]`](#enso-hello-file)
 * [`enso help [COMMAND]`](#enso-help-command)
@@ -35,7 +37,7 @@ USAGE
 
 describe the command here
 
-```
+```bash
 USAGE
   $ enso hello [FILE]
 

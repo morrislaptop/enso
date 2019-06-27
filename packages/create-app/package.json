@@ -1,0 +1,48 @@
+{
+  "name": "@ensojs/create-app",
+  "description": "Utility for starting enso projects",
+  "version": "0.0.0",
+  "author": "1a35e1 @1a35e1",
+  "bin": {
+    "create-enso-app": "./bin/run"
+  },
+  "bugs": "https://github.com/1a35e1/create-app/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "@types/fs-extra": "^8.0.0",
+    "fs-extra": "^8.0.1",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/tslint": "^3",
+    "@types/node": "^10",
+    "ts-node": "^8",
+    "tslint": "^5",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/1a35e1/create-app",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "create-enso-app"
+  },
+  "repository": "1a35e1/create-app",
+  "scripts": {
+    "posttest": "tslint -p . -t stylish",
+    "prepack": "rm -rf lib && tsc -b",
+    "test": "echo NO TESTS"
+  },
+  "types": "lib/index.d.ts"
+}
